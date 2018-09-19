@@ -49,7 +49,7 @@ body {
 	position: relative;
 }
 a:not([class]) {
-	color: @accent;
+	color: @green;
 	text-decoration: none;
 }
 a:not([class]):hover {
@@ -218,7 +218,7 @@ section.no-padding-bottom {
 }
 .btn:hover,
 .btn:focus {
-	background-color: rgba(10, 186, 215, 0.3);
+	background-color: fade(@darkGold, 30%);
 	color: @textBase;
 }
 .btn.invert {
@@ -226,8 +226,8 @@ section.no-padding-bottom {
 	border: 2px solid #FFFFFF;
 }
 .btn.blue {
-	color: @accent;
-	border: 2px solid @accent;
+	color: @darkGold;
+	border: 2px solid @darkGold;
 	padding: 12px 17px;
 }
 
@@ -954,18 +954,18 @@ b, strong {
 	border-top: 1px solid #bbbdbf;
 	margin: 0 auto;
 	max-width: 1600px;
-	color: @accent;
+	color: @green;
 	.footer-logo {
 	    position: relative;
 	    width: 204px;
-	    height: 56px;
-	    background-image: url('../images/muze-logo-blue.svg');
+	    height: 110px;
+	    background-image: url('../images/green-logo.svg');
 	    background-size: 204px auto;
 	    margin-bottom: 10px;
 	    text-indent: -10000px;
 	}
 	.logo-tag {
-		font-size: 0.97rem;
+		font-size: 0.90rem;
 		color: @textBase;
 	}
 	.footer-heading {
@@ -997,7 +997,7 @@ b, strong {
     		.smooth-transition;
     	}
     	.fa:hover {
-    		color: fade(@accent, 60%);
+    		color: @darkGold;
     	}
     }
 	.btn.blue {
@@ -1385,11 +1385,11 @@ b, strong {
 	section.pre-footer {
 		h3 {
 			.fa {
-				color: @accent;
+				color: @darkGold;
 			}
 			span {
 				font-size: 1rem;
-				color: @accent;
+				color: @darkGold;
 			}
 		}
 	}

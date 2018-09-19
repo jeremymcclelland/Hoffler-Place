@@ -30,7 +30,7 @@ body {
   position: relative;
 }
 a:not([class]) {
-  color: #04BBD8;
+  color: #375737;
   text-decoration: none;
 }
 a:not([class]):hover {
@@ -186,7 +186,7 @@ section.no-padding-bottom {
 }
 .btn:hover,
 .btn:focus {
-  background-color: rgba(10, 186, 215, 0.3);
+  background-color: rgba(198, 149, 44, 0.3);
   color: #292E38;
 }
 .btn.invert {
@@ -194,8 +194,8 @@ section.no-padding-bottom {
   border: 2px solid #FFFFFF;
 }
 .btn.blue {
-  color: #04BBD8;
-  border: 2px solid #04BBD8;
+  color: #c6952c;
+  border: 2px solid #c6952c;
   padding: 12px 17px;
 }
 /* ************************************** Forms */
@@ -872,19 +872,19 @@ strong {
   border-top: 1px solid #bbbdbf;
   margin: 0 auto;
   max-width: 1600px;
-  color: #04BBD8;
+  color: #375737;
 }
 .footer .footer-logo {
   position: relative;
   width: 204px;
-  height: 56px;
-  background-image: url('../images/muze-logo-blue.svg');
+  height: 110px;
+  background-image: url('../images/green-logo.svg');
   background-size: 204px auto;
   margin-bottom: 10px;
   text-indent: -10000px;
 }
 .footer .logo-tag {
-  font-size: 0.97rem;
+  font-size: 0.90rem;
   color: #292E38;
 }
 .footer .footer-heading {
@@ -918,7 +918,7 @@ strong {
   transition: all 0.3s ease;
 }
 .footer .social-links .fa:hover {
-  color: rgba(4, 187, 216, 0.6);
+  color: #c6952c;
 }
 .footer .btn.blue {
   margin-right: 5px;
@@ -1281,11 +1281,11 @@ strong {
   margin-top: 90px;
 }
 .page-homepage section.pre-footer h3 .fa {
-  color: #04BBD8;
+  color: #c6952c;
 }
 .page-homepage section.pre-footer h3 span {
   font-size: 1rem;
-  color: #04BBD8;
+  color: #c6952c;
 }
 /*  ******* Custom Twitter and Instagram Feeds */
 /* Twitter */
