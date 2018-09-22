@@ -4,12 +4,21 @@
 @backgroundAccent: #F9F9F9;
 @textBase: #292E38;
 @textInvert: #FFFFFF;
-@accent: #04BBD8;
+@accent: #000000;
 @accentLight: #75E4EF;
 @pop: #F11C5F;
 
+@black: #000000;
 @green: #375737;
 @darkGold: #c6952c;
+@lightGold: #eed47e;
+
+.panel-collapsed {
+	color: @darkGold !important;
+}
+.hidden {
+	display: none;
+}
 .smooth-transition {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -49,7 +58,7 @@ body {
 	position: relative;
 }
 a:not([class]) {
-	color: @green;
+	color: @black;
 	text-decoration: none;
 }
 a:not([class]):hover {
@@ -218,17 +227,26 @@ section.no-padding-bottom {
 }
 .btn:hover,
 .btn:focus {
-	background-color: fade(@darkGold, 30%);
-	color: @textBase;
+	background-color: @black;
+	color: #ffffff;
 }
 .btn.invert {
 	color: #FFFFFF;
 	border: 2px solid #FFFFFF;
+
+	&:hover, &:focus {
+		//border-color: @black;
+	}
 }
 .btn.blue {
 	color: @darkGold;
 	border: 2px solid @darkGold;
 	padding: 12px 17px;
+
+	&:focus, &:hover {
+		color: #ffffff;
+		background-color: @darkGold;
+	}
 }
 
 
@@ -292,10 +310,10 @@ section.no-padding-bottom {
 	input[type="email"],
 	input[type="tel"],
 	textarea {
-		background: #F0F8FB;
+		background: fade(@black, 10%);
 		border: 2px solid #FFFFFF;
 		width: 100%;
-		color: @textBase;
+		color: @black;
 		font-weight: 300;
 		border-radius: 0;
 		box-shadow: none;
@@ -510,7 +528,7 @@ b, strong {
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: @green;
+		background-color: @black;
 		// opacity: 0.5;
 	}
 	.header-container {
@@ -554,9 +572,9 @@ b, strong {
 			}
 			li.current-menu-item {
 				a {
-					border-bottom: 4px solid #FFFFFF;
+					border-bottom: 4px solid #ffffff;
 					font-weight: 700;
-    				background-color: #4b0f9842;
+    				background-color: lighten(@black, 10%);
 				}
 			}
 			li.has-subnav > ul.subnav {
@@ -655,7 +673,7 @@ b, strong {
 	    	font-weight: 500;
 	    }
 	    a:hover {
-	    	color: #79edff; 
+	    	color: @lightGold; 
 	    }
 	}
 	.contact-nav-mobile {
@@ -954,12 +972,12 @@ b, strong {
 	border-top: 1px solid #bbbdbf;
 	margin: 0 auto;
 	max-width: 1600px;
-	color: @green;
+	color: @black;
 	.footer-logo {
 	    position: relative;
 	    width: 204px;
 	    height: 110px;
-	    background-image: url('../images/green-logo.svg');
+	    background-image: url('../images/black-logo.svg');
 	    background-size: 204px auto;
 	    margin-bottom: 10px;
 	    text-indent: -10000px;
@@ -967,6 +985,8 @@ b, strong {
 	.logo-tag {
 		font-size: 0.90rem;
 		color: @textBase;
+		width: 204px;
+		text-align: center;
 	}
 	.footer-heading {
 		color: inherit;
@@ -1063,9 +1083,9 @@ b, strong {
 		right: 0;
 		width: 305px;
 		height: 305px;
-		background-color: @darkGold;
+		background-color: fade(#ffffff, 90%);
 		border-radius: 50%;
-		color: #FFFFFF;
+		color: @black;
 		text-transform: uppercase;
 		text-align: center;
 		padding: 60px 5px;
@@ -1083,7 +1103,8 @@ b, strong {
 		    line-height: 2.3rem;
 		}
 		a {
-			color: #FFFFFF;
+			color: @black;
+			text-decoration: none;
 		}
 	}
 }
@@ -1117,6 +1138,8 @@ b, strong {
 	top: -195px;
 	right: 0;
 	z-index: 600;
+	max-width: 276px;
+
 }
 
 /* XLarge & Up */
@@ -1199,7 +1222,7 @@ b, strong {
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(23, 189, 217, 0.7);
+			background-color: fade(@black, 70%);
 			text-align: center;
 			opacity: 0;
 			.smooth-transition;
@@ -1215,7 +1238,7 @@ b, strong {
 			}
 			.expand {
 				background-color: #FFFFFF;
-				background-image: url('../images/blue-plus.png');
+				background-image: url('../images/gold-plus.png');
 				background-repeat: no-repeat;
 				background-position: center;
 				width: 50px;
@@ -1942,7 +1965,7 @@ b, strong {
 		}
 	}
 	.pre-map {
-		background-color: #F0F8FB;
+		background-color: fade(@black, 10%);
 		padding-top: 27px;
 	}
 	section.map {
@@ -2081,6 +2104,10 @@ b, strong {
 
 
 /* ************************************** Page: S.M.A.R.T. Housing ************************************** */
+
+.cvp-live-filter .cvp-label {
+	display: none;
+}
 .page-smart-housing {
 	.smart-housing-intro {
 		border-bottom: 1px solid #bbbdbf;
@@ -2111,7 +2138,7 @@ b, strong {
 	  font-weight: 400;
 	  text-transform: uppercase;
 	  color: @accent;
-	  background-color: #f2f8fb;
+	  background-color: fade(@black, 10%);
 	  border: none;
 	  height: 52px;
 	  margin: -20px 30px 20px 0;

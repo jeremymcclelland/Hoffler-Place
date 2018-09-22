@@ -3,7 +3,7 @@
 				<div class="container row">
 					<div class="small-12 medium-5 large-4 columns">
 						<a alt="Muze Logo" href="<?php echo get_home_url(); ?>"><div class="footer-logo">Hoffler Place</div></a>
-						<p class="logo-tag">By Armada Hoffler Properties</p>
+						<p class="logo-tag">Your New Home Awaits</p>
 						<?php
                             $pay_rent = of_get_option('pay_rent');
 
