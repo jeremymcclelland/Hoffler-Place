@@ -58,7 +58,7 @@ body {
 	position: relative;
 }
 a:not([class]) {
-	color: @black;
+	color: @lightGold;
 	text-decoration: none;
 }
 a:not([class]):hover {
@@ -239,13 +239,14 @@ section.no-padding-bottom {
 	}
 }
 .btn.blue {
-	color: @darkGold;
-	border: 2px solid @darkGold;
+	color: @lightGold;
+	border: 2px solid @lightGold;
 	padding: 12px 17px;
 
 	&:focus, &:hover {
 		color: #ffffff;
 		background-color: @darkGold;
+		border: 2px solid @darkGold;
 	}
 }
 
@@ -554,7 +555,7 @@ b, strong {
 			li {
 				display: inline-block;
 				a {
-					color: inherit;
+					color: @lightGold;
 					text-decoration: none;
 					text-shadow: none;
 					-webkit-font-smoothing: antialiased;
@@ -567,12 +568,12 @@ b, strong {
 					transition: padding 0.3s ease;
 				}
 				a:hover {
-					border-bottom: 4px solid #FFFFFF;
+					border-bottom: 4px solid @lightGold;
 				}
 			}
 			li.current-menu-item {
 				a {
-					border-bottom: 4px solid #ffffff;
+					border-bottom: 4px solid @lightGold;
 					font-weight: 700;
     				background-color: lighten(@black, 10%);
 				}
@@ -668,7 +669,7 @@ b, strong {
 	    	margin-left: 40px;
 	    }
 	    a {
-	    	color: inherit;
+	    	color: @lightGold;
 	    	text-decoration: none;
 	    	font-weight: 500;
 	    }
@@ -969,22 +970,23 @@ b, strong {
 /* ************************************** Footer ************************************** */
 
 .footer {
-	border-top: 1px solid #bbbdbf;
+	//border-top: 1px solid #bbbdbf;
+	background: @black;
 	margin: 0 auto;
 	max-width: 1600px;
-	color: @black;
+	color: @lightGold;
 	.footer-logo {
 	    position: relative;
 	    width: 204px;
 	    height: 110px;
-	    background-image: url('../images/black-logo.svg');
+	    background-image: url('../images/hoffler-gold.svg');
 	    background-size: 204px auto;
 	    margin-bottom: 10px;
 	    text-indent: -10000px;
 	}
 	.logo-tag {
 		font-size: 0.90rem;
-		color: @textBase;
+		color: @lightGold;
 		width: 204px;
 		text-align: center;
 	}
@@ -1393,7 +1395,8 @@ b, strong {
 		}
 	}
 	section.location {
-		background-color: @backgroundAccent;
+		background-color: @green;
+		color: @lightGold;
 		.map-flash {
 			position: absolute;
 			right: 0;

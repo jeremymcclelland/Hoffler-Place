@@ -36,7 +36,7 @@ body {
   position: relative;
 }
 a:not([class]) {
-  color: #000000;
+  color: #eed47e;
   text-decoration: none;
 }
 a:not([class]):hover {
@@ -200,14 +200,15 @@ section.no-padding-bottom {
   border: 2px solid #FFFFFF;
 }
 .btn.blue {
-  color: #c6952c;
-  border: 2px solid #c6952c;
+  color: #eed47e;
+  border: 2px solid #eed47e;
   padding: 12px 17px;
 }
 .btn.blue:focus,
 .btn.blue:hover {
   color: #ffffff;
   background-color: #c6952c;
+  border: 2px solid #c6952c;
 }
 /* ************************************** Forms */
 .wpforms-form .wpforms-field {
@@ -514,7 +515,7 @@ strong {
   display: inline-block;
 }
 .header .nav-menu .nav-list li a {
-  color: inherit;
+  color: #eed47e;
   text-decoration: none;
   text-shadow: none;
   -webkit-font-smoothing: antialiased;
@@ -524,10 +525,10 @@ strong {
   transition: padding 0.3s ease;
 }
 .header .nav-menu .nav-list li a:hover {
-  border-bottom: 4px solid #FFFFFF;
+  border-bottom: 4px solid #eed47e;
 }
 .header .nav-menu .nav-list li.current-menu-item a {
-  border-bottom: 4px solid #ffffff;
+  border-bottom: 4px solid #eed47e;
   font-weight: 700;
   background-color: #1a1a1a;
 }
@@ -623,7 +624,7 @@ strong {
   margin-left: 40px;
 }
 .header .contact-nav a {
-  color: inherit;
+  color: #eed47e;
   text-decoration: none;
   font-weight: 500;
 }
@@ -880,23 +881,23 @@ strong {
 }
 /* ************************************** Footer ************************************** */
 .footer {
-  border-top: 1px solid #bbbdbf;
+  background: #000000;
   margin: 0 auto;
   max-width: 1600px;
-  color: #000000;
+  color: #eed47e;
 }
 .footer .footer-logo {
   position: relative;
   width: 204px;
   height: 110px;
-  background-image: url('../images/black-logo.svg');
+  background-image: url('../images/hoffler-gold.svg');
   background-size: 204px auto;
   margin-bottom: 10px;
   text-indent: -10000px;
 }
 .footer .logo-tag {
   font-size: 0.90rem;
-  color: #292E38;
+  color: #eed47e;
   width: 204px;
   text-align: center;
 }
@@ -1283,7 +1284,8 @@ strong {
   margin-left: 4px;
 }
 .page-homepage section.location {
-  background-color: #F9F9F9;
+  background-color: #375737;
+  color: #eed47e;
 }
 .page-homepage section.location .map-flash {
   position: absolute;
