@@ -40,6 +40,7 @@
 
 		$blog_header_image = get_field('blog_header_image', 'option');
 		$blog_mobile_header_image = get_field('blog_mobile_header_image', 'option');
+		$blog_header_title = get_field('blog_title', 'option');
 
 		if(!$blog_header_image){
 			$blog_header_image =  $template_directory . '/images/blog-hero.jpg';
@@ -53,7 +54,7 @@
 					<div class="hero-text">
 						<div class="container row text-invert">
 							<div class="small-12 columns">
-								<h1>What’s happening in West Campus?</h1>
+								<h1>' . $blog_header_title . '</h1>
 							</div>
 						</div>
 					</div>
