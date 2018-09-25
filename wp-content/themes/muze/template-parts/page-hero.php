@@ -38,6 +38,17 @@
 	if ( is_single() || is_archive() ) {
 		$template_directory = get_template_directory_uri();
 
+		$blog_header_image = get_field('blog_header_image', 'option');
+		$blog_mobile_header_image = get_field('blog_mobile_header_image', 'option');
+
+		if(!$blog_header_image){
+			$blog_header_image =  $template_directory . '/images/blog-hero.jpg';
+		}
+
+		if(!$blog_mobile_header_image){
+			$blog_mobile_header_image =  $template_directory . '/images/blog-hero-mobile.jpg';
+		}
+
 		echo'	<section class="page-hero no-padding-bottom no-padding-top">
 					<div class="hero-text">
 						<div class="container row text-invert">
@@ -46,8 +57,8 @@
 							</div>
 						</div>
 					</div>
-					<img class="hero-img" alt="Hero Background Image"  src="' . $template_directory . '/images/blog-hero.jpg"/>
-					<img class="hero-img-mobile" alt="Hero Background Image"  src="' . $template_directory . '/images/blog-hero-mobile.jpg"/>
+					<img class="hero-img" alt="Hero Background Image"  src="' . $blog_header_image . '"/>
+					<img class="hero-img-mobile" alt="Hero Background Image"  src="' . $blog_mobile_header_image . '"/>
 				</section>';
     }
                                               
