@@ -211,8 +211,9 @@ section.no-padding-bottom {
 
 .btn {
 	display: inline-block;
-    color: @textBase;
-    border: 2px solid @textBase;
+    color: @lightGold;
+    border: 2px solid @lightGold;
+    background: @green;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
@@ -228,20 +229,22 @@ section.no-padding-bottom {
 .btn:hover,
 .btn:focus {
 	background-color: @black;
-	color: #ffffff;
+	color: @lightGold;
 }
 .btn.invert {
-	color: #FFFFFF;
-	border: 2px solid #FFFFFF;
+	color: @lightGold;
+	border: 2px solid @lightGold;
+	background: @green;
 
 	&:hover, &:focus {
-		//border-color: @black;
+		background: @black;
 	}
 }
 .btn.blue {
 	color: @lightGold;
 	border: 2px solid @lightGold;
 	padding: 12px 17px;
+	background: @black;
 
 	&:focus, &:hover {
 		color: #ffffff;
@@ -1083,15 +1086,16 @@ b, strong {
 	.home-page-flash {
 		position: absolute;
 		right: 0;
-		width: 305px;
-		height: 305px;
-		background-color: fade(#ffffff, 90%);
+		width: 275px;
+		height: 275px;
+		background-color: @green;
+		border: 2px solid @lightGold;
 		border-radius: 50%;
-		color: @black;
+		color: @lightGold;
 		text-transform: uppercase;
 		text-align: center;
 		padding: 60px 5px;
-	    font-size: 1.35rem;
+	    font-size: 1rem;
 	    line-height: 1.8rem;
 	    font-weight: 200;
 	    -webkit-box-shadow: 10px 10px 29px -9px rgba(0,0,0,0.75);
@@ -1101,11 +1105,11 @@ b, strong {
 			font-weight: 600;
 		    margin-top: 15px;
 		    display: block;
-		    font-size: 1.5rem;
+		    font-size: 1.25rem;
 		    line-height: 2.3rem;
 		}
 		a {
-			color: @black;
+			color: @lightGold;
 			text-decoration: none;
 		}
 	}
@@ -1161,6 +1165,7 @@ b, strong {
 			margin-top: 80px;
 		}
 		.home-page-flash {
+			display: none;
 			width: 240px;
 			height: 240px;
 			padding: 50px 5px;
@@ -1168,7 +1173,7 @@ b, strong {
     		line-height: 1.2rem;
     		margin-top: -60px;
 			span {
-			    font-size: 1.5rem;
+			    font-size: 1rem;
     			line-height: 1.8rem;
 			}
 		}

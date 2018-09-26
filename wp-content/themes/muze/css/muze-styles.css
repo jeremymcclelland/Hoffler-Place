@@ -175,8 +175,9 @@ section.no-padding-bottom {
 /* ************************************** Buttons  */
 .btn {
   display: inline-block;
-  color: #292E38;
-  border: 2px solid #292E38;
+  color: #eed47e;
+  border: 2px solid #eed47e;
+  background: #375737;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
@@ -193,16 +194,22 @@ section.no-padding-bottom {
 .btn:hover,
 .btn:focus {
   background-color: #000000;
-  color: #ffffff;
+  color: #eed47e;
 }
 .btn.invert {
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: #eed47e;
+  border: 2px solid #eed47e;
+  background: #375737;
+}
+.btn.invert:hover,
+.btn.invert:focus {
+  background: #000000;
 }
 .btn.blue {
   color: #eed47e;
   border: 2px solid #eed47e;
   padding: 12px 17px;
+  background: #000000;
 }
 .btn.blue:focus,
 .btn.blue:hover {
@@ -987,15 +994,16 @@ strong {
 .homepage-hero .home-page-flash {
   position: absolute;
   right: 0;
-  width: 305px;
-  height: 305px;
-  background-color: rgba(255, 255, 255, 0.9);
+  width: 275px;
+  height: 275px;
+  background-color: #375737;
+  border: 2px solid #eed47e;
   border-radius: 50%;
-  color: #000000;
+  color: #eed47e;
   text-transform: uppercase;
   text-align: center;
   padding: 60px 5px;
-  font-size: 1.35rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   font-weight: 200;
   -webkit-box-shadow: 10px 10px 29px -9px rgba(0, 0, 0, 0.75);
@@ -1005,11 +1013,11 @@ strong {
   font-weight: 600;
   margin-top: 15px;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2.3rem;
 }
 .homepage-hero .home-page-flash a {
-  color: #000000;
+  color: #eed47e;
   text-decoration: none;
 }
 .page-hero {
@@ -1059,6 +1067,7 @@ strong {
     margin-top: 80px;
   }
   .homepage-hero .home-page-flash {
+    display: none;
     width: 240px;
     height: 240px;
     padding: 50px 5px;
@@ -1067,7 +1076,7 @@ strong {
     margin-top: -60px;
   }
   .homepage-hero .home-page-flash span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.8rem;
   }
   .page-hero {
