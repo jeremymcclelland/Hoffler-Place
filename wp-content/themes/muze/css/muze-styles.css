@@ -947,9 +947,16 @@ strong {
 }
 /* Medium & Down */
 @media only screen and (max-width: 63.938em) {
+  .footer {
+    text-align: center;
+  }
+  .footer .footer-logo {
+    display: inline-block;
+  }
   .footer .logo-tag {
     top: 60px;
     left: 23px;
+    width: 100%;
     font-size: 0.85rem;
   }
   .footer .social-links {
@@ -1084,7 +1091,7 @@ strong {
     min-height: 264px;
   }
   .page-hero .hero-text h1 {
-    margin-top: 16%;
+    margin-top: 30%;
   }
   .hero-flash {
     width: 200px;
